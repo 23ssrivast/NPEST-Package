@@ -13,6 +13,30 @@
 The library follows a consistent scikit-learn–inspired API: `fit()`, `pdf()`, `plot()`.
 
 ## Installation
-You can install the latest version directly from the GitHub repository:
+Option 1:
+You can install the latest version directly from the GitHub repository using command prompt:
 ```bash
-pip install git+https://github.com/23ssrivast/npest.git
+curl -O https://raw.githubusercontent.com/23ssrivast/NPEST-Package/main/npest.py
+```
+Option 2:
+Use this directly in python
+```bash
+import urllib.request
+import os
+
+# The direct link to the raw Python file on GitHub
+url = "https://raw.githubusercontent.com/23ssrivast/NPEST-Package/main/npest.py"
+
+# The name you want to save it as locally
+filename = "npest.py"
+
+print(f"Downloading {filename} from GitHub...")
+
+try:
+    # This downloads the file and saves it
+    urllib.request.urlretrieve(url, filename)
+    print(f"Success! '{filename}' has been saved to: {os.getcwd()}")
+    print("You can now type 'import npest' to use it.")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
