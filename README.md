@@ -3,12 +3,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-**npest** is a lightweight, pure Python library for intuitive nonparametric inference. It provides:
+**npest** is a lightweight, pure Python library for intuitive nonparametric inference. This library is useful for estimation purposes for Non Parametric datasets. It provides:
 
 - **Kernel Density Estimation** (Gaussian, Epanechnikov, Triangular, Box)
 - **Histograms** with automatic bin selection (Sturges, Freedman–Diaconis, Scott, Bayesian blocks)
 - **Bayesian bootstrap** for credible intervals
-- **Nonparametric hypothesis tests**: goodness-of-fit, two-sample, correlation (Spearman, Kendall, Hoeffding), and custom bootstrap tests.
+- **Nonparametric hypothesis tests**: goodness-of-fit test, two-sample, correlation (Spearman, Kendall, Hoeffding), and custom bootstrap tests.
 
 The library follows a consistent scikit-learn–inspired API: `fit()`, `pdf()`, `plot()`.
 
